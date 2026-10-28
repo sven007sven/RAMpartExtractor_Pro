@@ -1,4 +1,8 @@
 # 🛡️ RAMpartExtractor Pro (v2.0)
+
+<img width="702" height="582" alt="grafik" src="https://github.com/user-attachments/assets/19b36dd8-7fc5-41e5-907b-90d0b12d6a71" />
+
+
 ### Zero-Disk Archive Isolation & Hardening Security Tool
 **Developed by Sven Nahrstedt**
 
@@ -19,6 +23,9 @@ Das Tool nutzt die brachiale Geschwindigkeit deines **Arbeitsspeichers (RAM) als
 ---
 
 ## ⚡ Die Sicherheits-Schilde im Detail
+
+<img width="699" height="746" alt="grafik" src="https://github.com/user-attachments/assets/dc78247a-72c5-4384-852f-9a1b6045d406" />
+
 
 * **Zero-Disk-Quarantäne (`io.BytesIO`):** Vollständige In-Memory-Isolierung. Kein physischer Festplattenkontakt vor dem finalen Sicherheits-Go.
 * **SSD-Schutz & Langlebigkeit:** Verhindert unnötige Schreibzyklen durch infizierte temporäre Dateien und schützt die Lebensdauer deiner Hardware.
