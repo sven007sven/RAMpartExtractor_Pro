@@ -42,36 +42,7 @@ Das Tool nutzt die brachiale Geschwindigkeit deines **Arbeitsspeichers (RAM) als
 
 ## 🛠️ Systemanforderungen & Installation
 
-Das Tool wurde als **portable Standalone-Anwendung** konzipiert, um das "Zero-Disk"-Konzept treu zu bleiben. Es hinterlässt keine Registry-Einträge.
-
-### Für Entwickler (Ausführen als Python-Skript):
-1. **Repository klonen:**
-   ```bash
-   git clone https://github.com
-   cd RAMpartExtractor
-   ```
-2. **Abhängigkeiten installieren:**
-   ```bash
-   pip install py7zr rarfile watchdog win10toast yara-python
-   ```
-3. **Starten:**
-   ```bash
-   python "RAMpart Extractor.py"
-   ```
-
----
-
-## 📦 Als portable Standalone-EXE kompilieren
-
-Du möchtest das Tool als einzelne, schicke `.exe` mit dem offiziellen Festungs-Icon exportieren? Nutzen den `PyInstaller`:
-
-```bash
-pip install pyinstaller
-pyinstaller --onefile --noconsole --noconfirm --icon="app_icon.ico" --name="RAMpartExtractor_Pro" "RAMpart Extractor.py"
-```
-Die fertige Anwendung findest du anschließend im Ordner `/dist`.
-
----
+Das Tool wurde als **portable Standalone-Anwendung** konzipiert, um das "Zero-Disk"-Konzept treu zu bleiben. Es hinterlässt keine Registry-Einträge. Kompatibel mit Win10 / Win11, Entpacken und loslegen.
 
 ## 📄 Lizenz & Haftungsausschluss
 
