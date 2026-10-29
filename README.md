@@ -51,4 +51,4 @@ Dieses Projekt ist als kostenlose **Freeware** lizenziert. Das bedeutet: Freie N
 ---
 
 ## ☕ Unterstütze das Projekt
-Der RAMpartExtractor Pro ist und bleibt Open Source. Wenn das Tool deine SSD schont und dir gefällt, freue ich mich riesig über eine kleine Unterstützung auf [Ko-fi / PayPal] (z. B. 10 Cent für einen virtuellen Kaffee)!
+Der RAMpartExtractor Pro ist und bleibt noch Freeware. Wenn das Tool deine SSD schont und dir gefällt, freue ich mich riesig über eine kleine Unterstützung auf [Ko-fi / PayPal] (z. B. 10 Cent für einen virtuellen Kaffee)!
