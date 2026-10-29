@@ -46,7 +46,7 @@ Das Tool wurde als **portable Standalone-Anwendung** konzipiert, um das "Zero-Di
 
 ## 📄 Lizenz & Haftungsausschluss
 
-Dieses Projekt ist unter der **MIT-Lizenz** lizenziert. Das bedeutet: Freie Nutzung und Modifikation, jedoch unter vollständigem Ausschluss jeglicher Gewährleistung und Haftung ("as is"). Siehe die Datei [LICENSE](LICENSE) für Details.
+Dieses Projekt ist als kostenlose **Freeware** lizenziert. Das bedeutet: Freie Nutzung, Installation und Weiterverbreitung der originalen ausführbaren Datei (EXE) für private und kommerzielle Zwecke. Jegliche Modifikation, Dekompilierung oder Veränderung der Binärdatei ist untersagt. Die Software wird ohne jegliche Gewährleistung oder Haftung ("as is") bereitgestellt. Siehe die Datei [LICENSE](LICENSE) für die vollständige Endnutzer-Lizenzvereinbarung (EULA).
 
 ---
 
