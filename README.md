@@ -63,4 +63,4 @@ Um maximale Transparenz und Sicherheit zu gewährleisten, wurde die ausführbare
 
 * **Ergebnis:** 0 / 74 (100% Sauber)
 * **SHA-256 Hash:** `28e0b23cfe26a51329061ce6d9196b04f37489f76ce3130480672de8724b9d22`
-* **Direktlink zum Scan:** [VirusTotal Analysebericht ansehen](https://www.virustotal.com/gui/file/28e0b23cfe26a51329061ce6d9196b04f37489f76ce3130480672de8724b9d22/detection)
+* **Direktlink zum Scan:** [VirusTotal Analysebericht ansehen](https://www.virustotal.com/gui/file/f3b84313beb4f939a4124467ba1a1f8223c695fdbdd645e949d1999bfa3333aa/detection)
