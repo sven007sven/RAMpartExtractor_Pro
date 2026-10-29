@@ -1,4 +1,4 @@
-# 🛡️ RAMpartExtractor Pro (v2.0)
+# 🛡️ RAMpartExtractor Pro (v2.1)
 
 <img width="702" height="582" alt="grafik" src="https://github.com/user-attachments/assets/19b36dd8-7fc5-41e5-907b-90d0b12d6a71" />
 
@@ -15,6 +15,17 @@
 ## 🚀 Was ist RAMpartExtractor Pro?
 
 Herkömmliche Entpackungsprogramme (wie WinRAR oder 7-Zip) haben ein gefährliches Geheimnis: Wenn du ein Archiv öffnest, schreiben sie die Daten sofort im Hintergrund temporär auf deine SSD. Befindet sich darin Schadcode, hat die Malware bereits die Oberfläche deiner Festplatte berührt – noch bevor dein Antiviren-Scanner reagieren kann. Das erhöht das Infektionsrisiko und nutzt durch ständige Schreib- und Löschzyklen die empfindlichen Speicherzellen deiner SSD ab.
+
+## 🆕 Changelog v2.1 (Community Hardening Update)
+Dank des großartigen Feedbacks aus der ComputerBase-Community wurden folgende kritische Verbesserungen umgesetzt:
+- **Volle Thread-Sicherheit:** GUI-Kommunikation komplett über Queues entkoppelt (beseitigt sporadische Abstürze).
+- **Echter Zip-Slip Schutz:** Harte Pfad-Validierung verhindert Verzeichnis-Ausbrüche (`../`).
+- **Ressourcen-Grenzwerte aktiv:** Scharfe Durchsetzung von Speicherlimits und Kompressions-Ratios gegen ZIP-Bomben.
+- **Echtes In-Memory-7z:** Vollständige Streaming-Pipeline für `.7z`-Archive implementiert.
+- **Dynamischer RAM-Check:** Vorab-Prüfung via `psutil` verhindert System-Freezes bei kleinen Systemen (z.B. 8 GB RAM).
+- **Prozess-Sicherheit:** Der Download-Watcher wird beim Schließen des Fensters nun sauber beendet (keine Zombie-Threads).
+- **UI-Upgrade:** Neuer animierter Live-Fortschrittsbalken während des SSD-Schreibvorgangs inklusive exakter GB-Anzeige.
+
 
 **RAMpartExtractor Pro löst dieses Problem radikal.** 
 
