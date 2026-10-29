@@ -52,3 +52,11 @@ Dieses Projekt ist als kostenlose **Freeware** lizenziert. Das bedeutet: Freie N
 
 ## ☕ Unterstütze das Projekt
 Der RAMpartExtractor Pro ist und bleibt noch Freeware. Wenn das Tool deine SSD schont und dir gefällt, freue ich mich riesig über eine kleine Unterstützung auf [Ko-fi / PayPal] (z. B. 10 Cent für einen virtuellen Kaffee)!
+
+
+## 🔍 Unabhängiger Sicherheits-Check (VirusTotal)
+Um maximale Transparenz und Sicherheit zu gewährleisten, wurde die ausführbare Datei unabhängig von über 70 Antiviren-Scannern geprüft:
+
+* **Ergebnis:** 0 / 74 (100% Sauber)
+* **SHA-256 Hash:** `28e0b23cfe26a51329061ce6d9196b04f37489f76ce3130480672de8724b9d22`
+* **Direktlink zum Scan:** [VirusTotal Analysebericht ansehen](https://www.virustotal.com/gui/file/28e0b23cfe26a51329061ce6d9196b04f37489f76ce3130480672de8724b9d22/detection)
