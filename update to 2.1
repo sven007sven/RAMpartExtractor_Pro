@@ -1,0 +1,39 @@
+# 🛡️ RAMpartExtractor Pro v2.1 – Community Hardening Update
+
+Dieses Release hebt den RAMpartExtractor auf ein neues Level an Sicherheit, Stabilität und Transparenz. 
+Als direkte Reaktion auf das wertvolle Architektur-Feedback der Open-Source-Community (u.a. ComputerBase) wurden 
+fundamentale Sicherheitslücken geschlossen und die gesamte Code-Basis vollständig modularisiert.
+
+---
+
+## 🆕 Changelog & Verbesserungen
+
+### 🔒 Cyber-Security Hardening
+* **Schutz vor Path Traversal (Zip-Slip):** Eine neue, strikte Pfad-Validierung (`validiere_pfad`) löst relative Pfade auf. 
+Manipulierte Archive, die versuchen, über Pfad-Tricks (z. B. `../../Autostart/malware.exe`) aus dem Zielordner auszubrechen 
+und Systemdateien zu überschreiben, werden rigoros blockiert.
+* **Durchsetzung von Ressourcen-Grenzen:** Die Schutzmechanismen gegen Denial-of-Service-Angriffe (ZIP-Bomben) sind nun voll aktiv. 
+Bei jeder einzelnen Datei im Archiv wird live die unkomprimierte Gesamtgröße sowie die Kompressions-Ratio (max. 1500-fache Packrate) überprüft.
+* **Sichere Dateifilterung:** Die Blacklist für riskante Dateitypen (`.exe`, `.dll`, `.sys`, `.bat`, `.ps1` etc.) wurde sauber in den In-Memory-Workflow integriert.
+
+### ⚡ Stabilität & System-Schutz
+* **Volle Thread-Sicherheit (Tkinter-Fix):** Der Hintergrund-Thread (Worker) greift nicht mehr direkt auf die Benutzeroberfläche zu. 
+Alle Log-Meldungen und Dialoge werden nun über eine thread-sichere Warteschlange (`gui_queue`) an den Hauptthread übergeben. 
+Sporadische GUI-Abstürze und Freezes sind komplett eliminiert.
+* **Dynamischer RAM-Check (via `psutil`):** Die App ermittelt vor dem Laden des Archivs den tatsächlich freien Arbeitsspeicher des Systems. 
+Zu große Archive werden auf Systemen mit kleinerer RAM-Bestückung (z. B. 8 GB) kontrolliert abgefangen, statt Windows in den Out-of-Memory-Freeze zu zwingen.
+* **Sauberes Watcher-Terminieren:** Beim Schließen des Fensters wird der Watchdog-Hintergrundthread nun ordnungsgemäß beendet (`.stop()` und `.join()`). 
+Keine verwaisten Zombie-Prozesse mehr im Windows-Taskmanager.
+
+### 🚀 Funktionsumfang & UI-Upgrades
+* **Echtes In-Memory-7z:** Die alte Platzhalter-Logik wurde durch die echte Streaming-Architektur von `py7zr` (`readall()`) ersetzt. 
+Daten verbleiben während der Analyse zu 100 % verlustfrei im RAM, ohne jemals die SSD zu berühren.
+* **Kontextbezogener Ladebalken:** Ein animierter Fortschrittsbalken ploppt nun exakt während des SSD-Schreibvorgangs direkt unter dem Aktions-Button auf.
+* **Präzise Daten-Abrechnung:** Nach erfolgreichem Entpacken berechnet das Tool die exakte Datenmenge aller geschriebenen Daten und gibt diese im Protokoll aus (z. B. `[INFO] 
+Gesamtgröße auf SSD abgelegt: 4.30 GB`).
+
+### 📂 Struktur-Update
+Die Anwendung wurde von einem monolithischen Skript in ein sauberes, modulares 3-Dateien-System aufgeteilt:
+1. `main.py` – GUI & Datei-Watcher
+2. `security.py` – Sicherheitsregeln & YARA-Scans
+3. `extractor.py` – In-Memory-Extraktionslogik
