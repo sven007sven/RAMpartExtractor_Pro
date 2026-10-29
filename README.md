@@ -1,6 +1,7 @@
 # 🛡️ RAMpartExtractor Pro (v2.1)
 
-<img width="702" height="582" alt="grafik" src="https://github.com/user-attachments/assets/19b36dd8-7fc5-41e5-907b-90d0b12d6a71" />
+<img width="702" height="582" alt="grafik" src="https://github.com/user-attachments/assets/19a7f3d3-6d1e-44c1-9430-98dbd782d400" />
+
 
 
 ### Zero-Disk Archive Isolation & Hardening Security Tool
@@ -16,16 +17,6 @@
 
 Herkömmliche Entpackungsprogramme (wie WinRAR oder 7-Zip) haben ein gefährliches Geheimnis: Wenn du ein Archiv öffnest, schreiben sie die Daten sofort im Hintergrund temporär auf deine SSD. Befindet sich darin Schadcode, hat die Malware bereits die Oberfläche deiner Festplatte berührt – noch bevor dein Antiviren-Scanner reagieren kann. Das erhöht das Infektionsrisiko und nutzt durch ständige Schreib- und Löschzyklen die empfindlichen Speicherzellen deiner SSD ab.
 
-## 🆕 Changelog v2.1 (Community Hardening Update)
-Dank des großartigen Feedbacks aus der ComputerBase-Community wurden folgende kritische Verbesserungen umgesetzt:
-- **Volle Thread-Sicherheit:** GUI-Kommunikation komplett über Queues entkoppelt (beseitigt sporadische Abstürze).
-- **Echter Zip-Slip Schutz:** Harte Pfad-Validierung verhindert Verzeichnis-Ausbrüche (`../`).
-- **Ressourcen-Grenzwerte aktiv:** Scharfe Durchsetzung von Speicherlimits und Kompressions-Ratios gegen ZIP-Bomben.
-- **Echtes In-Memory-7z:** Vollständige Streaming-Pipeline für `.7z`-Archive implementiert.
-- **Dynamischer RAM-Check:** Vorab-Prüfung via `psutil` verhindert System-Freezes bei kleinen Systemen (z.B. 8 GB RAM).
-- **Prozess-Sicherheit:** Der Download-Watcher wird beim Schließen des Fensters nun sauber beendet (keine Zombie-Threads).
-- **UI-Upgrade:** Neuer animierter Live-Fortschrittsbalken während des SSD-Schreibvorgangs inklusive exakter GB-Anzeige.
-
 
 **RAMpartExtractor Pro löst dieses Problem radikal.** 
 
@@ -35,12 +26,13 @@ Das Tool nutzt die brachiale Geschwindigkeit deines **Arbeitsspeichers (RAM) als
 
 ## ⚡ Die Sicherheits-Schilde im Detail
 
-<img width="699" height="746" alt="grafik" src="https://github.com/user-attachments/assets/dc78247a-72c5-4384-852f-9a1b6045d406" />
-
-
 * **Zero-Disk-Quarantäne (`io.BytesIO`):** Vollständige In-Memory-Isolierung. Kein physischer Festplattenkontakt vor dem finalen Sicherheits-Go.
 * **SSD-Schutz & Langlebigkeit:** Verhindert unnötige Schreibzyklen durch infizierte temporäre Dateien und schützt die Lebensdauer deiner Hardware.
 * **Militärisches Hardening gegen Exploits:**
+
+<img width="701" height="581" alt="v2 1" src="https://github.com/user-attachments/assets/1b63ae99-2d4f-4fda-8247-7d2ef036f8b5" />
+
+
   * **ZIP-Bomb-Defuser:** Überwacht das Kompressionsverhältnis in Echtzeit. Wenn sich Daten bösartig aufblähen, wird die Reißleine gezogen, um RAM-Overloads zu verhindern.
   * **Zip-Slip-Schutz:** Erkennt und blockiert Pfad-Traversierungs-Angriffe (Ausbrüche aus dem Zielverzeichnis).
   * **Strikte Endungs-Whitelist:** Gefährliche System- und Skriptdateien (`.exe`, `.dll`, `.bat`, `.ps1` etc.) werden im Keim erstickt.
@@ -54,6 +46,7 @@ Das Tool nutzt die brachiale Geschwindigkeit deines **Arbeitsspeichers (RAM) als
 ## 🛠️ Systemanforderungen & Installation
 
 Das Tool wurde als **portable Standalone-Anwendung** konzipiert, um das "Zero-Disk"-Konzept treu zu bleiben. Es hinterlässt keine Registry-Einträge. Kompatibel mit Win10 / Win11, Entpacken und loslegen.
+Bitte auch die Releases & Updates lesen. Dort wird auch die Info zu den Speichergrößen hinterlegt. Bitte dieses Tool ab 8GB benutzen !! 
 
 ## 📄 Lizenz & Haftungsausschluss
 
