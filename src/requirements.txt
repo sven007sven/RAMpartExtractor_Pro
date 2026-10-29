@@ -1,0 +1,6 @@
+watchdog
+win10toast
+yara-python
+psutil
+py7zr
+rarfile
