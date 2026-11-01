@@ -4,3 +4,5 @@ yara-python
 psutil
 py7zr
 rarfile
+
+# Diese Version ist noch 2.1
