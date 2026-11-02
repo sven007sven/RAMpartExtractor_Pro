@@ -6,9 +6,7 @@
 ### Zero-Disk Archive Isolation & Hardening Security Tool
 
 **Entwickelt von Sven Nahrstedt**
-
 ---
-
 ## 💡 Warum wurde RAMpartExtractor Pro ins Leben gerufen?
 
 Herkömmliche Entpackungsprogramme (wie WinRAR, 7-Zip oder der Windows-Explorer) haben eine gravierende Sicherheitslücke: Sie schreiben Daten beim Öffnen oder Scannen oft unbemerkt **temporär auf die Festplatte (SSD/HDD)**. 
