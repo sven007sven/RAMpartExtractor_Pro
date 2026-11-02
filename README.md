@@ -1,4 +1,3 @@
-!!! UPDATE !!!  version 2.2 --- https://github.com/sven007sven/RAMpartExtractor_Pro/releases/tag/2.2
 
 # 🛡️ RAMpartExtractor Pro (v2.2)
 
